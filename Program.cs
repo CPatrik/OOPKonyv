@@ -14,6 +14,8 @@ namespace OOPProject
             book.SetPrice(5000);
 
             Console.WriteLine($"Books information: {book.MergeInfo()}");
+            book.IncreasePrice(10);
+            Console.WriteLine($"Increase price by 10%: {book.MergeInfo()}");
         }
     }
 }

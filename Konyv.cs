@@ -13,7 +13,7 @@ namespace OOPProject
 
         public void IncreasePrice(int percentage)
         {
-            this.price += ((percentage / 100) * this.price);
+            price += (double)percentage / 100 * price;
         }
 
         public string MergeInfo()
