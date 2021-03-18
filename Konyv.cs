@@ -11,6 +11,22 @@ namespace OOPProject
         private int year;
         private double price;
 
+        public Konyv(string title, string writer, int year, double price)
+        {
+            this.title = title;
+            this.writer = writer;
+            this.year = year;
+            this.price = price;
+        }
+
+        public Konyv(string title, string writer)
+        {
+            this.title = title;
+            this.writer = writer;
+            price = 2500;
+            year = DateTime.Now.Year;
+        }
+
         public void IncreasePrice(int percentage)
         {
             price += (double)percentage / 100 * price;
